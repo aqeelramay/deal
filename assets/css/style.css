@@ -1,0 +1,374 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #212121;
+  background-color: #f8f8f8; }
+
+a {
+  outline: none;
+  text-decoration: none; }
+
+a:hover {
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  text-decoration: none; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+.hide {
+  display: none; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.white_box {
+  background-color: #fff;
+  border: 1px solid #f0efef; }
+
+.p20 {
+  padding: 20px; }
+
+.back_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+  .back_top a {
+    background-color: rgba(15, 20, 25, 0.7);
+    padding: 15px 15px 10px;
+    color: #fff;
+    font-size: 16px; }
+  .back_top a:hover {
+    background-color: rgba(15, 20, 25, 0.9); }
+
+.mainmenu {
+  color: #fff; }
+  .mainmenu .navbar-default {
+    background-color: #263440;
+    border-color: transparent;
+    min-height: 60px; }
+  .mainmenu .navbar-default .navbar-nav > li > a {
+    color: #fff; }
+  .mainmenu .navbar-default .navbar-nav > li > a:focus,
+  .mainmenu .navbar-default .navbar-nav > li > a:hover {
+    color: #fff; }
+  .mainmenu .navbar-default .navbar-nav > .open > a,
+  .mainmenu .navbar-default .navbar-nav > .open > a:focus,
+  .mainmenu .navbar-default .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: transparent; }
+  .mainmenu .navbar-nav > li > .dropdown-menu {
+    margin-top: 10px; }
+
+.search_bar {
+  position: relative;
+  padding: 90px 0 30px; }
+  .search_bar::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 125, 196, 0.2);
+    content: ' ';
+    z-index: 0; }
+  .search_bar::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/shopping.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    content: ' ';
+    z-index: -1; }
+  .search_bar h3 {
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 10px; }
+
+.search_form {
+  background-color: #fff;
+  padding: 30px 30px 15px; }
+  .search_form .form-control {
+    height: 44px;
+    background-color: #f5f6f8;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none; }
+  .search_form .btn-primary {
+    background-color: #00bcd4;
+    color: #fff;
+    border-color: #00bcd4; }
+  .search_form .btn {
+    font-size: 18px;
+    padding: 10px 15px 7px; }
+
+.search_checkboxes {
+  text-align: left; }
+  .search_checkboxes .checkbox {
+    padding-left: 20px;
+    display: inline-block;
+    margin-right: 10px; }
+  .search_checkboxes .checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px; }
+  .search_checkboxes .checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+  .search_checkboxes .checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555; }
+  .search_checkboxes .checkbox input[type="checkbox"] {
+    opacity: 0; }
+  .search_checkboxes .checkbox input[type="checkbox"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  .search_checkboxes .checkbox input[type="checkbox"]:checked + label::after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e013"; }
+  .search_checkboxes .checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.65; }
+  .search_checkboxes .checkbox input[type="checkbox"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed; }
+  .search_checkboxes .checkbox.checkbox-circle label::before {
+    border-radius: 50%; }
+  .search_checkboxes .checkbox.checkbox-inline {
+    margin-top: 0; }
+  .search_checkboxes .checkbox-primary input[type="checkbox"]:checked + label::before {
+    background-color: #428bca;
+    border-color: #428bca; }
+  .search_checkboxes .checkbox-primary input[type="checkbox"]:checked + label::after {
+    color: #fff; }
+
+.popular_stores_cont {
+  text-align: center; }
+  .popular_stores_cont li > a {
+    display: inline-block;
+    position: relative;
+    width: 110px;
+    height: 50px;
+    border: 1px solid #f0efef;
+    padding: 5px 10px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #fff; }
+    .popular_stores_cont li > a img {
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto; }
+  .popular_stores_cont .glyphicon {
+    position: absolute;
+    top: 30px;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer; }
+  .popular_stores_cont .glyphicon-menu-left {
+    left: -30px; }
+  .popular_stores_cont .glyphicon-menu-right {
+    right: -40px; }
+  .popular_stores_cont .slick-list {
+    margin: 0 -5px 0 7px;
+    padding: 10px 0 0 0;
+    background-color: #fff; }
+  .popular_stores_cont .storename a {
+    display: block;
+    margin-bottom: 10px;
+    color: #212121; }
+  .popular_stores_cont .storename a:hover {
+    color: #00bcd4; }
+
+.stores_img a {
+  display: block;
+  position: relative;
+  width: 180px;
+  height: 110px;
+  border: 1px solid #f0efef;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none; }
+  .stores_img a img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto; }
+
+.store_name {
+  text-align: center; }
+  .store_name a {
+    text-decoration: underline; }
+  .store_name a:hover {
+    text-decoration: none; }
+
+.coupon_title a {
+  color: #232f3e;
+  font-size: 16px;
+  font-weight: bold; }
+.coupon_title a:hover {
+  color: #00bcd4; }
+
+.coupon_text {
+  color: #999; }
+
+.coupon_expiry {
+  color: #999; }
+
+.coupon_code_box {
+  position: relative;
+  top: 50px;
+  z-index: 1;
+  width: 100%;
+  min-height: 40px;
+  max-width: 220px; }
+  .coupon_code_box a {
+    display: block; }
+
+.coupon_code {
+  display: block;
+  font-size: 1em;
+  line-height: 3.3em;
+  font-weight: bold;
+  color: #212121;
+  text-align: right;
+  height: auto !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background-color: #f0efef;
+  box-shadow: none;
+  overflow: hidden;
+  padding-right: 15px; }
+
+.show_code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 3.3em;
+  text-transform: uppercase;
+  width: 80%;
+  height: 45px;
+  padding: 0 20px 0 20px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  background: repeating-linear-gradient(45deg, transparent, transparent 10px, #00b3ca 10px, #00b3ca 20px), linear-gradient(to bottom, #00bcd4, #00bcd4); }
+
+.show_code:hover {
+  width: 100%; }
+
+.popular_categories {
+  background-color: #fff;
+  border: 1px solid #f0efef; }
+  .popular_categories ul {
+    margin-bottom: 0; }
+  .popular_categories li {
+    border-bottom: 1px solid #f0efef; }
+    .popular_categories li a {
+      padding: 10px 20px;
+      display: block;
+      color: #212121; }
+      .popular_categories li a i {
+        margin-right: 10px; }
+    .popular_categories li a:hover {
+      color: #00bcd4; }
+    .popular_categories li:last-child {
+      border-bottom: none; }
+
+footer {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 0 0 15px; }
+
+.footer_links {
+  margin: 20px auto 0;
+  text-align: center; }
+  .footer_links ul {
+    margin-bottom: 0; }
+  .footer_links a {
+    color: #969696; }
+  .footer_links a:hover {
+    text-decoration: underline; }
+
+.copyright_text {
+  text-align: center;
+  color: #969696; }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    width: 100%; }
+
+  .popular_stores_cont .glyphicon-menu-left {
+    left: auto;
+    right: 30px;
+    top: -40px; }
+  .popular_stores_cont .glyphicon-menu-right {
+    right: 0;
+    top: -40px; }
+  .popular_stores_cont .glyphicon {
+    font-size: 30px; }
+
+  .popular_stores_cont .slick-list {
+    margin: 0 0 0 7px;
+    padding: 10px 0 0 0;
+    background-color: #fff; } }
+
+/*# sourceMappingURL=style.css.map */
