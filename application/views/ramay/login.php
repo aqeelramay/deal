@@ -39,28 +39,6 @@
         </div>
     </div>
 </body>
-<!-- <div class="admin_login_cont">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 col-md-offset-3">
-        <div class="login_cont">
-          <h3 class="text-center">Login</h3>
-          <form>
-            <div class="form-group">
-              <label for="admin_username">Username<span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="admin_username" placeholder="">
-            </div>
-            <div class="form-group">
-              <label for="admin_password">Password<span class="text-danger">*</span></label>
-              <input type="password" class="form-control" id="admin_password" placeholder="">
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="<?=base_url()?>frontend/assets/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
