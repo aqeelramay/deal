@@ -10,8 +10,10 @@
 
   <!-- Bootstrap -->
   <link href="<?=base_url()?>frontend/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?=base_url()?>frontend/assets/css/slick.css" rel="stylesheet">
+  <link href="<?=base_url()?>frontend/assets/css/slick-theme.css" rel="stylesheet">
   <link href="<?=base_url()?>frontend/assets/css/font-awesome.min.css" rel="stylesheet">
-  <link href="<?=base_url()?>backend/assets/css/style.css" rel="stylesheet">
+  <link href="<?=base_url()?>frontend/assets/css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,4 +22,3 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-

@@ -1,0 +1,168 @@
+$main-container: 1170px;
+$black_color: #232f3e;
+$dark_blue_color: #3679b6;
+$light_blue_color: #00bcd4;
+$text_color: #212121;
+$light_grey_color: #999;
+$border_color: #f0efef;
+$open-sans: 'Open Sans',sans-serif;
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+body {
+    font-family: $open-sans;
+    font-size: 14px;
+    color: $text_color;
+    background-color: #f8f8f8;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: .2s linear;
+    -webkit-transition: .2s linear;
+    text-decoration: none;
+}
+
+.container {
+    width: $main-container;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+.back_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    a {
+        background-color: rgba(15, 20, 25, 0.7);
+        padding: 15px 15px 10px;
+        color: #fff;
+        font-size: 16px;
+    }
+    a:hover {
+        background-color: rgba(15, 20, 25, 0.9);
+    }
+}
+/* Login Page */
+
+.login_wraper {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+.login_container {
+    display: table-cell;
+    vertical-align: middle;
+}
+.login_box {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 500px;
+    background-color: #fff;
+	box-shadow: 0 6px 15px 0 rgba(207, 211, 218, 0.35);
+    padding: 20px;
+    .form-control {
+        border-radius: 3px;
+        border: 1px solid #e9ecef;
+        height: 42px;
+        box-shadow: none;
+    }
+    label {
+        font-weight: normal;
+    }
+    h3 {
+        font-weight: bold;
+    }
+}
+
+
+
+.admin_login_cont {
+	background-color: #F8F8F8;
+	margin: 0 auto;
+	padding: 40px 40px;
+}
+.login_cont {
+	background-color: #fff;
+	box-shadow: 0 6px 15px 0 rgba(207, 211, 218, 0.35);
+    padding: 20px;
+    .form-control {
+        border-radius: 3px;
+        border: 1px solid #e9ecef;
+        height: 42px;
+        box-shadow: none;
+    }
+    label {
+        font-weight: normal;
+    }
+    h3 {
+        font-weight: bold;
+    }
+}
+
+/* Dashboard Page */
+.dashboard_wraper {
+    display: table;
+    width: 100%;
+}
+.dashboard_sidebar {
+    display: table-cell;
+    width: 20%;
+    background-color: #363d41;
+}
+.dashboard_cont {
+    display: table-cell;
+    width: 80%;
+    background-color: #F8F8F8;
+}
+.adminuser_panel {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    img {
+        width: 100%;
+        max-width: 45px;
+        height: auto;
+        border-radius: 50%;
+    }
+    .info {
+        padding: 5px 5px 5px 15px;
+        line-height: 1;
+        position: absolute;
+        left: 55px;
+        color: #fff;
+        p {
+            font-weight: 600;
+            margin-bottom: 9px;
+        }
+    }
+    a {
+        text-decoration: none;
+        padding-right: 5px;
+        margin-top: 3px;
+        font-size: 11px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1170px;
+        width: 100%;
+    }
+}
