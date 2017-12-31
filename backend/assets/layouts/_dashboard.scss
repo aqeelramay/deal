@@ -19,4 +19,27 @@
         background-color: transparent;
         border-color: transparent;
     }
+    .dropdown-menu {
+        top: 120%;
+        left: 30px;
+        border-radius: 0;
+    }
+}
+.dashboard-row {
+    display: table;
+    width: 100%;
+}
+.dashboard-cont {
+    display: table-cell;
+    width: 85%;
+    padding: 20px;
+}
+.change-password-cont {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 30px 0 0;
+    .form-control {
+        border-radius: 0;
+    }
 }

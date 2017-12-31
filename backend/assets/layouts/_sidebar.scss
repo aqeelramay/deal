@@ -1,4 +1,63 @@
 .sidebar {
-    background-color: #263440;
-    padding: 20px;
+	display: table-cell;
+	width: 15%;
+	background-color: #263440;
+    color: #fff;
+    .panel-heading .accordion-toggle:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e258";
+        float: right;
+        color: #fff;
+    }
+    .panel-heading .accordion-toggle.collapsed:after {
+        content: "\e259";
+    }
+    .panel-default {
+        border-color: transparent;
+        > .panel-heading {
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+    .panel {
+        background-color: transparent;
+        border: 0px solid transparent;
+        box-shadow: none;
+    }
+    .panel-default>.panel-heading+.panel-collapse>.panel-body {
+        border-top-color: transparent;
+    }
+    .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+        border-top: 0px solid #ddd;
+        background-color: #1c2833;
+    }
+    .panel-body {
+        padding: 5px 15px;
+        ul {
+            margin-bottom: 0;
+            a  {
+                display: block;
+                padding: 5px 0;
+                color: #fff;
+                text-decoration: none;
+                span {
+                    margin-right: 5px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .panel-title>a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+.dashboard-mainlink {
+	a {
+		color: #fff;
+        text-decoration: none;
+        padding: 5px 15px;
+	}
 }

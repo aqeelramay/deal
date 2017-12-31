@@ -1,13 +1,6 @@
 <?php include("backend/include/header.php"); ?>
-<!-- <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <?php //include("backend/include/sidebar.php"); ?>
-        </div>
-        <div class="col-md-9">
-            main content
-        </div>
-    </div>
-</div> -->
-
+<?php include("backend/include/sidebar.php"); ?>
+<div class="dashboard-cont">
+    <h3>Welcome to Admin Panel, <?=ucwords($this->session->userdata('admin_username'))?></h3>
+</div>
 <?php include("backend/include/footer.php"); ?>
