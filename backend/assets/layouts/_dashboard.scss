@@ -1,0 +1,22 @@
+.topbar {
+    background-color: #263440;
+    padding: 10px 0;
+    text-align: center;
+}
+.visit-site {
+    font-size: 16px;
+    color: #fff;
+    line-height: 34px;
+}
+.admin-info {
+    .btn-default {
+        color: #fff;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+        color: #fff;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}

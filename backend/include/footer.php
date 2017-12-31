@@ -2,13 +2,6 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <div class="footer_links">
-        <ul class="list-unstyled list-inline">
-          <li><a href="">About Us</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
       <div class="copyright_text">
         Copyright © Coupon. All Rights Reserved.
       </div>

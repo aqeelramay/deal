@@ -1,0 +1,31 @@
+.login_wraper {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+.login_container {
+    display: table-cell;
+    vertical-align: middle;
+}
+.login_box {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 500px;
+    background-color: #fff;
+	box-shadow: 0 6px 15px 0 rgba(207, 211, 218, 0.35);
+    padding: 20px;
+    .form-control {
+        border-radius: 3px;
+        border: 1px solid #e9ecef;
+        height: 42px;
+        box-shadow: none;
+    }
+    label {
+        font-weight: normal;
+    }
+    h3 {
+        font-weight: bold;
+    }
+}
