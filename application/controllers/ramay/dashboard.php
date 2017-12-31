@@ -91,7 +91,7 @@ class Dashboard extends CI_Controller {
 		}
 		else
 		{
-			redirect('ramay/dashboard/changepass');	
+			redirect('ramay/dashboard/changePass');	
 		}
 	}
 		
