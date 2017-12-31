@@ -4,8 +4,8 @@ class Admin_model extends CI_Model {
 	
 	function can_login()
 	{
-		$this->db->where('username',mysql_real_escape_string($this->input->post('username')));
-		$this->db->where('password',md5(mysql_real_escape_string($this->input->post('password'))));
+		$this->db->where('username', $this->db->escape_str($this->input->post('username')));
+		$this->db->where('password', md5($this->db->escape_str($this->input->post('password'))));
 		$query= $this->db->get('adminuser');
 		
 		if($query->num_rows() == 1)

@@ -20,4 +20,29 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<body>
+<div class="topbar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="visit-site">Visit Deal</div>
+            </div>
+            <div class="col-md-offset-8 col-md-2">
+                <div class="admin-info text-center">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="glyphicon glyphicon-user"></span> <?=ucwords($this->session->userdata('admin_username'))?>
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="<?=base_url()?>ramay/dashboard/admin_setting">Admin Profile</a></li>
+                            <li><a href="<?=base_url()?>ramay/dashboard/changePass">Change Password</a></li>
+                            <li><a href="<?=base_url()?>ramay/dashboard/logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 

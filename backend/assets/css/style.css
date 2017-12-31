@@ -32,7 +32,6 @@ a:hover {
   .back_top a:hover {
     background-color: rgba(15, 20, 25, 0.9); }
 
-/* Login Page */
 .login_wraper {
   display: table;
   position: absolute;
@@ -61,66 +60,28 @@ a:hover {
   .login_box h3 {
     font-weight: bold; }
 
-.admin_login_cont {
-  background-color: #F8F8F8;
-  margin: 0 auto;
-  padding: 40px 40px; }
+.topbar {
+  background-color: #263440;
+  padding: 10px 0;
+  text-align: center; }
 
-.login_cont {
-  background-color: #fff;
-  box-shadow: 0 6px 15px 0 rgba(207, 211, 218, 0.35);
+.visit-site {
+  font-size: 16px;
+  color: #fff;
+  line-height: 34px; }
+
+.admin-info .btn-default {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent; }
+.admin-info .btn-default.active, .admin-info .btn-default:active, .admin-info .open > .dropdown-toggle.btn-default {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent; }
+
+.sidebar {
+  background-color: #263440;
   padding: 20px; }
-  .login_cont .form-control {
-    border-radius: 3px;
-    border: 1px solid #e9ecef;
-    height: 42px;
-    box-shadow: none; }
-  .login_cont label {
-    font-weight: normal; }
-  .login_cont h3 {
-    font-weight: bold; }
-
-/* Dashboard Page */
-.dashboard_wraper {
-  display: table;
-  width: 100%; }
-
-.dashboard_sidebar {
-  display: table-cell;
-  width: 20%;
-  background-color: #363d41; }
-
-.dashboard_cont {
-  display: table-cell;
-  width: 80%;
-  background-color: #F8F8F8; }
-
-.adminuser_panel {
-  position: relative;
-  width: 100%;
-  padding: 10px;
-  overflow: hidden;
-  white-space: nowrap; }
-  .adminuser_panel img {
-    width: 100%;
-    max-width: 45px;
-    height: auto;
-    border-radius: 50%; }
-  .adminuser_panel .info {
-    padding: 5px 5px 5px 15px;
-    line-height: 1;
-    position: absolute;
-    left: 55px;
-    color: #fff; }
-    .adminuser_panel .info p {
-      font-weight: 600;
-      margin-bottom: 9px; }
-  .adminuser_panel a {
-    text-decoration: none;
-    padding-right: 5px;
-    margin-top: 3px;
-    font-size: 11px;
-    color: #fff; }
 
 @media (max-width: 1200px) {
   .container {
